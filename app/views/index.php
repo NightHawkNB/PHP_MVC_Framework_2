@@ -1,0 +1,1 @@
+Pages controller - Index Method
