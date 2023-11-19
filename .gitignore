@@ -1,1 +1,4 @@
 .idea
+Dockerfile
+docker-compose.yml
+config.conf

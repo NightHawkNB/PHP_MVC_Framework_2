@@ -1,13 +1,25 @@
 <?php
+class Pages extends Controller{
 
-class Pages extends Controller {
-    
-    public function index() {
+    protected $pagesModel;
+
+    public function __construct(){
+        $this->pagesModel = $this->model('M_Pages');
+    }
+    public function index(){
+
         $this->view('index');
     }
 
-    public function about() {
-        $data = ['username' => 'Nipun'];
+    public function about(){
+        $users = $this->pagesModel->getUsers();
+        print_r($users);
+        die;
+        $data = [
+            'users' => $users
+        ];
+
         $this->view('about', $data);
+
     }
 }
