@@ -1,4 +1,27 @@
-h2 {
-    color: blue;
-    font-family: Calibri;
+@import "components/topnavbar.css";
+@import "components/form.css";
+@import "components/btn-styles.css";
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url("fonts/Poppins-Regular.ttf");
+}
+
+:root {
+    --form-width: 600px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    font-family: Poppins-Regular, sans-serif;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: saddlebrown;
 }

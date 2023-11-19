@@ -7,8 +7,8 @@ define('DB_NAME', 'simpleepic_db');
 
 
 //APPROOT
-define('APPROOT', dirname(dirname(__FILE__)));
+define('APP_ROOT', dirname(dirname(__FILE__)));
 //URLROOT
-define('URLROOT', 'http://localhost/PHP_MVC_Framework_2');
+define('URL_ROOT', 'http://localhost/PHP_MVC_Framework_2');
 //WEBSITE NAME
-define('SITENAME', 'SimpleEpic');
+define('APP_NAME', 'SimpleEpic');

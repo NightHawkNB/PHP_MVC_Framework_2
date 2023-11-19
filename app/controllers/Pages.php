@@ -13,13 +13,12 @@ class Pages extends Controller{
 
     public function about(){
         $users = $this->pagesModel->getUsers();
-        print_r($users);
-        die;
+
         $data = [
-            'users' => $users
+            'users' => $users,
+            'username' => "Nipun"
         ];
 
         $this->view('about', $data);
-
     }
 }

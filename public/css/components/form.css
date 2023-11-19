@@ -1,0 +1,42 @@
+form {
+    display: flex;
+    width: var(--form-width);
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px auto;
+    background-color: lightyellow;
+    padding: 30px 20px;
+    box-shadow: 1px 1px 2px black;
+}
+
+form > div {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+form > div > div {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+form input {
+    min-height: 35px;
+    padding: 5px;
+    transition: 0.5s ease;
+    border-radius: 5px;
+    border: 1px solid darkkhaki;
+}
+
+form input:focus {
+    box-shadow: 1px 1px 2px 2px grey;
+}
+
+.form-invalid {
+    color: darkred;
+    margin-bottom: 5px;
+    font-size: small;
+    font-weight: bold;
+}
