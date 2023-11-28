@@ -3,7 +3,7 @@
 
     <main>
 
-        <h1>Welcome</h1>
+        <h1>Welcome <?= $_SESSION['name'] ?> </h1>
 
     </main>
 
